@@ -8,7 +8,7 @@ supabase = create_client(os.getenv('SUPABASE_URL'), os.getenv('SUPABASE_KEY'))
 
 brand = supabase.table('brands').insert({'name': 'Zomato', 'keywords': ['Zomato', 'food delivery']}).execute().data[0]
 brand_id = brand['id']
-print(f'brand_id={brand_id}  ← COPY THIS INTO frontend/.env.local')
+print(f'brand_id={brand_id}  <-- COPY THIS INTO frontend/.env.local')
 
 cvi_arc = [28, 31, 35, 38, 44, 51, 59, 65, 71, 76, 81, 85, 88, 90, 91]
 levels  = ['LOW', 'LOW', 'LOW', 'LOW', 'WATCH', 'WATCH', 'MEDIUM', 'MEDIUM', 'HIGH', 'HIGH', 'HIGH', 'CRITICAL', 'CRITICAL', 'CRITICAL', 'CRITICAL']
