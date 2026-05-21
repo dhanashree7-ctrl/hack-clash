@@ -1,5 +1,5 @@
 fastapi
 uvicorn
 supabase
-transformers
-pydantic
+python-dotenv
+httpx
